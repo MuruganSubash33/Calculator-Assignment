@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #BB2649;
+          
+        }
+    .calculator{
+        background-color: lightpink;
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        border-radius: 25px;
+        gap: 3px;
+        
+        margin-top: 80px;
+         
+         
+        
+        
+    }
+    .one{
+        background-color: grey;
+        color: white;
+        width: 50px;
+        height: 50px;
+        margin: 7px;
+        border-radius: 10px;
+        font-size: larger;
+        box-shadow: 2px 2px 2px black;
+    }
+    #screen{
+        width: 240px;
+        height: 50px;
+        margin-top: -50px;
+        border-radius: 5px;
+        font-size: x-large;
+        background-color:#FF69B4;
+        box-shadow: 2px 2px 2px black;
+    }
+    .two{
+        background-color: orange;
+        color: white;
+        width: 50px;
+        height: 50px;
+        margin: 7px;
+        border-radius: 10px;
+        font-size: larger;
+        box-shadow: 2px 2px 2px black;
+    }
+    .three{
+        background-color:yellow;
+        width: 50px;
+        height: 50px;
+        margin: 7px;
+        border-radius: 10px;
+        font-size: larger;
+        box-shadow: 2px 2px 2px black;
+    }
+    h1{
+        position: relative;
+        top: -20px;
+        color:black;
+        z-index: 1;
+    }
+    :hover{
+        cursor:  pointer;
+        color: rgb(255, 89, 0);
+    }
+    @media(min-width:320px)and ( max-width:1300px)
+    {
+        .container-fluid{
+            
+            width: 300px;
+           
+        }
+        .calculator{
+            
+            margin-left: 200px;
+        }
+       
+    }
+    @media(min-width:830px)and ( max-width:1300px)
+    {
+        .container-fluid{
+            margin-left: 200px;
+        }
+    }
+    @media(min-width:320px)and ( max-width:532px)
+    {
+        .container-fluid{
+            margin-left: -110px;
+        } 
+    }
+</style>
+</head>
+<body>
+    
+    <div class="container-fluid">
+    
+    <div class="calculator">
+        <h1>Calculator</h1>
+        <input id="screen" value="">
+    <button class="two" onclick="clea()">AC</button>
+  
+    <button class="two" onclick="display('*')">×</button>
+    <button class="two" onclick="display('/')">/</button>
+    <button class="two" onclick="display('%')">÷ </button>
+    <button class="one" onclick="display('7')">7</button>
+    <button class="one" onclick="display('8')">8</button>
+    <button class="one" onclick="display('9')">9</button>
+    <button class="two" onclick="display('.')">.</button>
+  
+    <button class="one" onclick="display('4')">4</button>
+    <button class="one" onclick="display('5')">5</button>
+    <button class="one" onclick="display('6')">6</button>
+    <button class="two" onclick="display('-')">-</button>
+    <button class="one" onclick="display('1')">1</button>
+    <button class="one" onclick="display('2')">2</button>
+    <button class="one" onclick="display('3')">3</button>
+    <button class="two" onclick="display('+')">+</button>
+    <button class="three" onclick="del('Del')">%</button>
+    <button class="one" onclick="display('0')">0</button>
+   
+    <button class="three" onclick="clea('+/-')">+/-</button>
+    <button class="two" onclick="result('=')">=</button>
+</div>
+</div>
+<script src="Calculator.js"></script>
+
+</body>
+</html>
