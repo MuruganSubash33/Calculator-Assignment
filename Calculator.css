@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+ font-family: Arial, sans-serif;
+ background-image: url( pngtree-on-a-standard-normal-probabilities-table-a-pair-of-dice-a-picture-image_8416340.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ 
+}
+
+.calculator {
+  background-color:   whitesmoke;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#display {
+  width: 94%;
+  height: 50px;
+  background-color: rgb(128, 128, 128);
+  color:   #000000;
+  border: none;
+  text-align: right;
+  padding: 10px;
+  font-size: 23px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  
+}
+
+button {
+  padding: 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #555;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:     #999999;
+}
+
+.equals {
+  grid-column: span 1;
+  background-color: #f39c12;
+}
+
+.equals:hover {
+  background-color: gold;
+}
